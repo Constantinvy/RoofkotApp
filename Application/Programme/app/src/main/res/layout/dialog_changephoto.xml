@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/changer_de_photo"
+        android:textSize="20sp"
+        android:textColor="@color/Black"
+        android:textStyle="bold"/>
+
+    <!--
+    <TextView
+        android:id="@+id/dialog_changephoto_nouvelle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/prendre_une_nouvelle_photo"
+        android:textSize="20sp"
+        android:textColor="@color/Black" />
+        -->
+
+    <TextView
+        android:id="@+id/dialog_changephoto_galerie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/choisir_une_photo_dans_la_galerie"
+        android:textSize="20sp"
+        android:textColor="@color/Black"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/dialog_changephoto_annuler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/annuler"
+            android:textColor="@color/Rouge"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp" />
+
+    </RelativeLayout>
+        
+        
+</LinearLayout>

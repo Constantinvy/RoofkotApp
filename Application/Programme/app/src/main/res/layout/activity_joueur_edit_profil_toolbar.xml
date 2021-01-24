@@ -1,0 +1,40 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:background="@color/Gold">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/fragment_joueur_edit_profil_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/joueurs_edit_profil_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:textSize="30sp"
+                    android:textColor="@color/Blanc"
+                    android:gravity="center_horizontal" />
+
+                <ImageView
+                    android:id="@+id/joueurs_edit_profil_valider"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/valider" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+</merge>

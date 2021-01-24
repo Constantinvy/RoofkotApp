@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/pre_home_screen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <RelativeLayout
+            android:id="@+id/relat1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/activity_joueur_edit_profil_toolbar"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relat2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relat1"
+            android:padding="25dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/Gold">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/fragment_joueur_edit_profil_image"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                app:civ_border_color="@color/Black"
+                app:civ_border_width="2dp"/>
+
+            <ImageView
+                android:id="@+id/fragment_joueur_edit_profil_camera"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/fragment_joueur_edit_profil_image"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/galerie"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relat2"
+            android:background="@color/Gold">
+
+            <EditText
+                android:id="@+id/fragment_joueur_edit_profil_prenom"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Blanc"
+                android:textSize="30sp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:inputType="textNoSuggestions"
+                />
+
+            <EditText
+                android:id="@+id/fragment_joueur_edit_profil_nom"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Blanc"
+                android:textSize="30sp"
+                android:layout_toRightOf="@+id/fragment_joueur_edit_profil_prenom"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:inputType="textNoSuggestions"
+                android:layout_toEndOf="@+id/fragment_joueur_edit_profil_prenom"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="5dp" />
+
+
+            <EditText
+                android:id="@+id/fragment_joueur_edit_profil_categorie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Black"
+                android:textSize="20sp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/fragment_joueur_edit_profil_prenom"
+                android:inputType="textNoSuggestions"
+                />
+
+        </RelativeLayout>
+
+</RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+<!-- Pour faire un menu défilant avec les options : voir 10:30 Edit Contact
+fragment layout -->

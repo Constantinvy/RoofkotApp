@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#66000000</color>
+    <color name="colorPrimaryDark">#66000000</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="Background">#070C61</color>
+    <color name="Black">#000000</color>
+    <color name="Gold">#DAA520</color>
+    <color name="Light_Gold">#FFC81E</color>
+    <color name="Blanc">#FCFDFD</color>
+    <color name="Rouge">#D32F2F</color>
+    <color name="Bordeaux">#B71C1C</color>
+    <color name="Valider">#00E676</color>
+</resources>

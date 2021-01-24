@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pre_home_screen">
+
+    <TextView
+        android:id="@+id/text_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="MENU"
+        android:textColor="@color/Gold"
+        android:textSize="30sp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/text_menu"
+        android:layout_margin="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/menu_joueurs"
+                android:layout_width="140dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:background="@color/Gold"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp">
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/joueurs" />
+
+                <Button
+                    android:id="@+id/boutton_menu_joueurs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="Joueurs"
+                    android:textAlignment="center"
+                    android:textColor="@color/Blanc"
+                    android:background="@color/Gold"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menu_regles"
+                android:layout_width="140dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:background="@color/Gold"
+                android:orientation="vertical"
+                android:layout_toRightOf="@id/menu_joueurs"
+                android:layout_toEndOf="@id/menu_joueurs"
+                android:layout_marginLeft="40dp"
+                android:layout_marginStart="40dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/regles">
+                </ImageView>
+
+                <Button
+                    android:id="@+id/boutton_menu_regles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Règles"
+                    android:textColor="@color/Blanc"
+                    android:background="@color/Gold"
+                    android:textSize="25sp"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center">
+                </Button>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/menu_jeux"
+                android:layout_width="140dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_below="@id/menu_joueurs"
+                android:layout_marginTop="60dp"
+                android:background="@color/Gold"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/jeux">
+                </ImageView>
+
+                <Button
+                    android:id="@+id/boutton_menu_jeux"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jeux"
+                    android:textColor="@color/Blanc"
+                    android:background="@color/Gold"
+                    android:textSize="25sp"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center">
+                </Button>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/menu_partie"
+                android:layout_width="140dp"
+                android:layout_height="180dp"
+                android:layout_marginLeft="40dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_below="@id/menu_regles"
+                android:layout_toRightOf="@+id/menu_jeux"
+                android:layout_toEndOf="@+id/menu_jeux"
+                android:layout_marginTop="60dp"
+                android:background="@color/Gold"
+                android:layout_marginStart="40dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/partie">
+                </ImageView>
+
+                <Button
+                    android:id="@+id/boutton_menu_partie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nouvelle partie"
+                    android:textColor="@color/Blanc"
+                    android:background="@color/Gold"
+                    android:textSize="20sp"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center">
+                </Button>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menu_information"
+                android:layout_width="140dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_below="@id/menu_jeux"
+                android:layout_marginTop="60dp"
+                android:background="@color/Gold">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/information">
+                </ImageView>
+
+                <Button
+                    android:id="@+id/boutton_menu_information"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Information"
+                    android:textColor="@color/Blanc"
+                    android:background="@color/Gold"
+                    android:textSize="18sp"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center">
+                </Button>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

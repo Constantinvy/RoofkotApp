@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">RoofkotApp</string>
+
+
+    <!-- TOOLBAR -->
+    <string name="Profil">Profil</string>
+    <string name="Nouveau_joueur">Nouveau joueur</string>
+
+
+    <string name="title_activity_pre_home_screen">PreHomeScreen</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="nouvelle_partie">Nouvelle Partie</string>
+    <string name="menu">Menu</string>
+    <string name="annuler">Annuler</string>
+    <string name="choisir_une_photo_dans_la_galerie">Choisir une photo dans la galerie</string>
+    <string name="prendre_une_nouvelle_photo">Prendre une nouvelle photo</string>
+    <string name="changer_de_photo">Changer de photo</string>
+
+    <!-- Fragments names -->
+    <string name="Profil_Joueur_Edit_Fragment">JoueurProfilEditFragment</string>
+    <string name="Profil_Joueur_Fragment">JoueurProfilFragment</string>
+    <string name="View_Profils_Joueurs_Fragment">ViewProfilsJoueursFragment</string>
+    <string name="Change_photo_dialog">ChangePhotoDialog</string>
+    <string name="Add_Joueur">AddJoueurFragment</string>
+    <string name="Add_Jeux">AddJeuxFragment</string>
+    <string name="Profil_Regle_Fragment">RegleProfilEditFragment</string>
+    <string name="Add_Regle">AddRegleFragment</string>
+    <string name="Profil_Regle_Edit_Fragment">RegleProfilEditFragment</string>
+    <string name="Profil_Jeux_Fragment">ProfilJeuxFragment</string>
+    <string name="Profil_Jeux_Edit_Fragment">JeuxProfilEditFragment></string>
+    <string name="Partie_Profil_Fragment">PartieProfilFragment></string>
+    <string name="Resumer_Partie">PartieViewFragment></string>
+    <string name="Quitter_Partie">QuitterPartieDialog</string>
+
+
+    <!-- Keys -->
+    <string name="Joueur">Joueur</string>
+    <string name="categorie">Catégorie</string>
+    <string name="regles">Règles</string>
+    <string name="jeux">Jeux</string>
+    <string name="profil">Profil</string>
+    <string name="difficulte">Difficulté :</string>
+    <string name="ok">Ok</string>
+
+    <!-- Différentes difficultés -->
+    <string-array name="Difficulté">
+        <item>Normale</item>
+        <item>Intermédiaire</item>
+        <item>Pas là pour enfiler des perles</item>
+        <item>Roofkot</item>
+    </string-array>
+
+
+    <!-- Textes -->
+    <string name="description">Le principe de l\'application est de pimenter des jeux d\'alcool connus avec des règles
+    amusantes. Lors de la création d\'une partie vous devez choisir un jeu, minimum deux joueurs et une difficulté.\n
+         Cette difficulté sera celle des règles. Plus la difficulté d\'une règle est élevée, plus vous risquez de boire.
+        Chaque joueur recevra de manière aléatoire une règle que les autres joueurs ne connaitront pas. Cette règle lui
+        permettra de faire boire les autres joueurs ou d\'éviter de boire.\n
+        Chaque joueur a accès à sa règle dans le \'résumer de la partie\'. Il suffit de cliquer sur son nom. Chaque participant
+        doit garder sa règle secrète afin que l\'effet de surprise soit maximal !\n
+        L\'application vous propose déjà un bon nombre de jeux et de règles plus amusants les uns que les autres mais
+        vous pouvez également ajouter les vôtres !\n\n
+        N\'oubliez pas que l\'abut d\'alcool est dangereux pour la santé, buvez avec modération !!
+        Pour toutes questions, avis, commentaires n\'hésitez pas à envoyer un mail à RoofkotApp@gmail.com
+    </string>
+
+</resources>

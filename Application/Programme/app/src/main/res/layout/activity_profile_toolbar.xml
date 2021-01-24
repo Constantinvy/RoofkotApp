@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:background="@color/Gold"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/joueur_toolbar_profil"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/joueurs_profil_text"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/Blanc"
+        android:textSize="30sp"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:id="@+id/joueur_profil_modifier"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/modifier"
+        android:layout_marginEnd="15dp"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
+</androidx.appcompat.widget.Toolbar>
+</com.google.android.material.appbar.AppBarLayout>
+</merge>

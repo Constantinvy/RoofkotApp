@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/activity_simple_toolbar"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relative_layout1"
+            android:background="@drawable/pre_home_screen">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Gold"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/fragment_partieview_titre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:textSize="25sp"
+                    android:textColor="@color/Blanc"
+                    android:text="Résumer de la partie"/>
+
+                <TextView
+                    android:id="@+id/souligner"
+                    android:layout_width="250dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/fragment_partieview_titre"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/Blanc"
+                    />
+
+                <TextView
+                    android:id="@+id/fragment_partieview_jeu_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/souligner"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Jeu :"
+                    android:textSize="20sp"
+                    android:textColor="@color/Blanc"
+                    />
+
+                <ListView
+                    android:id="@+id/fragment_partieview_jeu_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/fragment_partieview_jeu_text"
+                    android:layout_margin="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/fragment_partieview_difficulte_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fragment_partieview_jeu_list"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/Blanc"
+                    android:text="@string/difficulte"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/fragment_partieview_difficulte_choisie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fragment_partieview_jeu_list"
+                    android:layout_toRightOf="@+id/fragment_partieview_difficulte_text"
+                    android:layout_toEndOf="@+id/fragment_partieview_difficulte_text"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/Black"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    />
+
+                <TextView
+                    android:id="@+id/fragment_partieview_joueur_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fragment_partieview_difficulte_text"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:textColor="@color/Blanc"
+                    android:textSize="20sp"
+                    android:text="Joueurs :"
+                    />
+
+                <ListView
+                    android:id="@+id/fragment_partieview_joueur_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fragment_partieview_joueur_text"
+                    android:layout_margin="20dp"
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

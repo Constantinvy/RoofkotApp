@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:background="@drawable/pre_home_screen"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/rel1">
+
+    <include layout="@layout/activity_profile_toolbar"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@color/Gold"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/rel2"
+        android:layout_below="@+id/rel1"
+        android:layout_marginTop="5dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_height="300dp"
+        android:layout_width="300dp"
+        android:id="@+id/fragment_joueur_profil_image"
+        android:layout_marginTop="40dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/Black"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/fragment_joueur_profil_prenom"
+        android:layout_below="@+id/fragment_joueur_profil_image"
+        android:layout_marginTop="50dp"
+        android:inputType="textNoSuggestions"
+        android:layout_marginStart="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="30sp"
+        android:textColor="@color/Blanc"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/fragment_joueur_edit_profil_nom"
+        android:layout_below="@+id/fragment_joueur_profil_image"
+        android:layout_marginTop="50dp"
+        android:inputType="textNoSuggestions"
+        android:layout_marginStart="15dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="30sp"
+        android:textColor="@color/Blanc"
+        android:layout_marginEnd="30dp"
+        android:layout_toEndOf="@+id/fragment_joueur_profil_prenom"
+        android:layout_toRightOf="@+id/fragment_joueur_profil_prenom"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/fragment_joueur_profil_categorie"
+        android:layout_below="@+id/fragment_joueur_profil_prenom"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="20sp"
+        android:textColor="@color/Black"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
+</RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,39 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/joueur_search_toolbar"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:background="@color/Light_Gold">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/joueur_toolbar_backarrow"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/backarrow"/>
+
+                <EditText
+                    android:id="@+id/search_joueurs_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@+id/joueur_toolbar_backarrow"
+                    android:textSize="28sp"
+                    android:textColor="@color/Blanc"
+                    android:layout_toEndOf="@+id/joueur_toolbar_backarrow" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+</merge>

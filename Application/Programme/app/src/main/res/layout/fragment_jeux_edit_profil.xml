@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:background="@drawable/pre_home_screen"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/rel1">
+
+            <include layout="@layout/activity_valider_toolbar"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/Gold"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/rel2"
+            android:layout_below="@+id/rel1"
+            android:layout_marginTop="5dp">
+
+            <EditText
+                android:id="@+id/fragment_jeux_edit_profil_nom"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="30sp"
+                android:textColor="@color/Blanc"
+                android:text="Nom"
+                />
+
+            <EditText
+                android:id="@+id/fragment_jeux_edit_profil_type"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/fragment_jeux_edit_profil_nom"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="20sp"
+                android:textColor="@color/Black"
+                android:textStyle="italic"
+                android:text="type"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/fragment_jeux_edit_profil_image"
+                android:layout_height="250dp"
+                android:layout_width="250dp"
+                android:layout_below="@+id/fragment_jeux_edit_profil_type"
+                android:layout_marginTop="20dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/Black"
+                android:layout_centerHorizontal="true"/>
+
+            <ImageView
+                android:id="@+id/fragment_jeux_edit_profil_galerie"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/fragment_jeux_edit_profil_image"
+                android:layout_toRightOf="@+id/fragment_jeux_edit_profil_image"
+                android:layout_above="@+id/fragment_jeux_edit_profil_scrollview"
+                android:src="@drawable/galerie" />
+
+            <ScrollView
+                android:id="@+id/fragment_jeux_edit_profil_scrollview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment_jeux_edit_profil_image"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp">
+
+
+                <EditText
+                    android:id="@+id/fragment_jeux_edit_profil_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="nopefs"
+                    android:textSize="20sp"
+                    android:textColor="@color/Black"/>
+
+            </ScrollView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

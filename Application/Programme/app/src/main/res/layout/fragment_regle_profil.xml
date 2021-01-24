@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:background="@drawable/pre_home_screen"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/rel1">
+
+        <include layout="@layout/activity_simple_toolbar"/>
+        <include layout="@layout/activity_profile_toolbar"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@color/Gold"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/rel2"
+        android:layout_below="@+id/rel1"
+        android:layout_marginTop="5dp">
+
+    <TextView
+        android:id="@+id/fragment_regle_profil_nom"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        android:textColor="@color/Blanc"
+        android:text="Nom de la règle"/>
+
+
+    <TextView
+        android:id="@+id/fragment_regle_profil_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_regle_profil_nom"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/Black"
+        android:text="@string/difficulte"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/fragment_regle_profil_difficulte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_regle_profil_nom"
+        android:layout_toRightOf="@+id/fragment_regle_profil_d"
+        android:layout_toEndOf="@+id/fragment_regle_profil_d"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/Bordeaux"
+        android:text="Roofkot"
+        android:textSize="20sp"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_regle_profil_d"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/fragment_regle_profil_description"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:textColor="@color/Black" />
+
+    </ScrollView>
+</RelativeLayout>
+</RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
