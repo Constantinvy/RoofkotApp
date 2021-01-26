@@ -257,7 +257,7 @@ public class RegleDataBaseHelper extends SQLiteOpenHelper {
                 "les joueurs). Chaque fois qu'une personne est élue experte, elle doit prendre un affond.");
         AddRegle(expert);
 
-        Regle intouchable3 = new Regle("Intouchable 3", pas_la, "Une fois lors de la partie, vous pouvez rendre un de vos amis 'intouchable' pour deux manches. Vous "+
+        Regle intouchable3 = new Regle("Intouchable 3", roofkot, "Une fois lors de la partie, vous pouvez rendre un de vos amis 'intouchable' pour deux manches. Vous "+
                 "devez l'écrire (sur votre téléphone, papier, etc) AVANT le début des manches. Toutes les gorgées que l'on donnera à votre ami n'auront aucun effet sur lui ! Après la manche, vous DEVEZ "+
                 "dire aux autres joueurs que vous avez utilisé cette règle, même si votre ami n'a pas reçu de gorgées !\n" +
                 "Le joueur peut également distribuer trois affonds. \n \n ");
